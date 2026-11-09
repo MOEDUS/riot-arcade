@@ -268,6 +268,9 @@ section { padding:110px 0; }
   border-color:var(--red);
   transform:translateY(-7px);
 }
+.game-card { display:block; color:inherit; cursor:pointer; }
+.game-card:focus-visible { outline:2px solid var(--lime); outline-offset:4px; }
+.game-card .status { color:var(--lime); }
 .card:before {
   content:"";
   position:absolute;
@@ -413,6 +416,7 @@ footer {
   <a class="logo" href="#">RIOT <b>ARCADE</b></a>
   <nav>
     <a href="#district">Districts</a>
+    <a href="#games">Games</a>
     <a href="#manifesto">Manifesto</a>
     <a href="#about">About</a>
   </nav>
@@ -475,9 +479,22 @@ footer {
     </div>
   </section>
 
+
+  <section class="wrap" id="games">
+    <div class="section-top">
+      <div><div class="kicker">02 / PLAY SOMETHING</div><h2 class="section-title">CHOOSE YOUR<br>GAME.</h2></div>
+      <p class="section-note">The arcade is live. Pick a game, test your luck and chase the high score.</p>
+    </div>
+    <div class="grid">
+      <a class="card game-card" href="games/slot/"><div class="card-no">GAME_001 / FREE PLAY</div><h3>Riot Slot</h3><p>Three reels. One line. Match the symbols and stack your arcade credits.</p><div class="status">PLAY NOW ↗</div></a>
+      <article class="card"><div class="card-no">GAME_002</div><h3>Next Game</h3><p>Another experience is taking shape. Stay tuned for the next drop.</p><div class="status">IN DEVELOPMENT</div></article>
+      <article class="card"><div class="card-no">GAME_003</div><h3>More Chaos</h3><p>New games. New challenges. More ways to break the routine.</p><div class="status">COMING SOON ↗</div></article>
+    </div>
+  </section>
+
   <section class="manifesto" id="manifesto">
     <div class="wrap">
-      <div class="kicker" style="color:#111">02 / THE MANIFESTO</div>
+      <div class="kicker" style="color:#111">03 / THE MANIFESTO</div>
       <h2>DON'T FIT IN.<br>BREAK OUT.</h2>
       <p>
         RIOT ARCADE is built for curiosity, creativity and play.
@@ -489,7 +506,7 @@ footer {
 
   <section class="wrap about" id="about">
     <div>
-      <div class="kicker">03 / WHO WE ARE</div>
+      <div class="kicker">04 / WHO WE ARE</div>
       <h2 class="section-title">NOT HERE<br>TO BLEND IN.</h2>
       <p class="about-copy">
         <strong>RIOT ARCADE is an independent digital entertainment concept.</strong>
